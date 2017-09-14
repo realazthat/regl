@@ -1,0 +1,11 @@
+sudo: required
+language: node_js
+node_js:
+ - "7.10.1"
+env:
+- NODE_ENV=TEST
+install:
+  - npm install --global browserify
+  - npm install
+script:
+  - npm run test
